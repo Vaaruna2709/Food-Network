@@ -1,0 +1,25 @@
+<% layout("./layouts/boilerplate.ejs") %>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <% for (let i = 3 * index; i < 3 * index + 3; i++) { %>
+                <div class="card recipe-card" data-index="<%i%>">
+                    <div class="card-head">
+                        <div class="heading"><h3><%= recipes[i].name %></h3></div>
+                        <div class="save-options"><span class="heart" data-index="<%= i %>">&#9829;</span></div>
+                    </div>
+                    <div class="card-body">
+                        <p>Ingredients: <%= recipes[i].ingredients %></p>
+                        <img src="/images/r<%= i + 1 %>.jpg" class="card-img" alt="image">
+                        <p>Recipe: <%= recipes[i].recipe %></p>
+                        <p>Cooking-duration: <%= recipes[i].cooking_duration %></p>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+   
+</body>
+
+
