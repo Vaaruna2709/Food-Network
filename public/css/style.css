@@ -102,3 +102,6 @@ a{
 .heart.saved{
     color: red;
 }
+.timeCard{
+    height: fit-content!important;
+}

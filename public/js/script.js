@@ -50,7 +50,34 @@ document.addEventListener('DOMContentLoaded', () => {
          .catch(error => console.error("Error fetching saved recipes:", error));
        
          window.location.href = url;
+    });
+          let dropdown =document.getElementById('filter');
+          dropdown.addEventListener('change', function() {
+            let selectedValue = this.value;
+            let sortHeader = document.getElementById('sort-header');
+            if (selectedValue === 'ingredients') {
+              sortHeader.textContent = 'Select the ingredients';
+
+            } else if (selectedValue === 'cooking_duration') {
+              sortHeader.textContent = 'Select by Cooking Duration';
+                const url = `/cooking-duration`;
+                axios.get(url)
+                .then(response => console.log("Received data:", response.data))
+                .catch(error => console.error("Error fetching saved recipes:", error));
        
+                 window.location.href = url;
+             
+            } else if (selectedValue === 'cuisine') {
+              sortHeader.textContent = 'Select by Cuisine';
+              const url = `/cuisine`;
+              axios.get(url)
+              .then(response => console.log("Received data:", response.data))
+              .catch(error => console.error("Error fetching saved recipes:", error));
+     
+               window.location.href = url;
+             
+            }
         
+  
     });
 });

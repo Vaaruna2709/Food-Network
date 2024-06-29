@@ -17,7 +17,7 @@ const recipes = [
           ],
          
           recipe: "Mix together mashed potatoes, mixed vegetables, green chili, ginger-garlic paste, garam masala powder, red chili powder, turmeric powder, chopped coriander leaves, and salt.Shape the mixture into round or oval cutlets.Coat each cutlet in cornflour, then bread crumbs.Fry in hot oil until golden brown and crispy on both sides.Drain on paper towels and serve hot with ketchup or chutney",
-         
+          cuisine:"Indian",
           cooking_duration: "30 minutes"
         },
         {
@@ -35,6 +35,7 @@ const recipes = [
           ],
         
           recipe: "In a mixing bowl, combine grated paneer, mashed potatoes, green chili, ginger-garlic paste, garam masala powder, red chili powder, turmeric powder, chopped coriander leaves, and salt. Mix well until all ingredients are thoroughly combined.Shape the mixture into small round or oval cutlets.Heat oil in a frying pan over medium heat.Meanwhile, coat each cutlet evenly with cornflour, shaking off any excess.Dip the cornflour-coated cutlets into bread crumbs, ensuring they are coated evenly.Fry the cutlets in hot oil until they are golden brown and crispy on both sides.Once fried, remove the cutlets from the oil and drain them on paper towels to remove excess oil.Serve the Cornflour Paneer Cutlets hot with your favorite chutney or dipping sauce.",
+          cuisine:"Indian",
           cooking_duration: "30 minutes"
         },
         {
@@ -52,6 +53,7 @@ const recipes = [
           ],
          
           recipe: "In a mixing bowl, combine finely chopped spinach, boiled and mashed potatoes, cornflour, bread crumbs, green chili (if using), ginger-garlic paste, garam masala powder, cumin powder, turmeric powder, and salt. Mix well until all ingredients are thoroughly combinedShape the mixture into small round or oval cutlets.Heat oil in a frying pan over medium heat.Coat each cutlet evenly with additional cornflour, shaking off any excess.Fry the cutlets in hot oil until they are golden brown and crispy on both sides, turning them carefully to ensure even cooking.Once fried, remove the cutlets from the oil and drain them on paper towels to remove excess oil.Serve the Cornflour Spinach Cutlets hot with mint chutney, tamarind sauce, or any dipping sauce of your choice..",
+          cuisine:"Indian",
           cooking_duration: "30 minutes"
         },
       
@@ -79,7 +81,7 @@ const recipes = [
             "1 1/2 cups chocolate chips"
         ],
        
-        
+        cuisine:"Indian",
         recipe: `
         Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.
         In a bowl, sift together flour, cocoa powder, baking soda, and salt.
@@ -104,7 +106,7 @@ const recipes = [
             "2 tablespoons unsalted butter",
             "1 teaspoon vanilla extract"
         ],
-       
+        cuisine:"Indian",
         recipe: `
         In a saucepan, whisk together sugar, cocoa powder, cornstarch, and salt.
         Gradually whisk in milk until smooth.
@@ -131,7 +133,7 @@ const recipes = [
             "1/4 tsp salt",
             "1 tsp vanilla extract"
         ],
-       
+        cuisine:"Indian",
         recipe: "In a medium bowl, whisk together dry ingredients: flour, baking powder, and salt. In a second bowl (or bowl of your stand mixer), beat together softened butter and sugar on medium-high speed for 5 minutes until thick and fluffy. Beat in eggs one at a time, mixing to incorporate with each egg then blend in vanilla and scrape down the bowl. Reduce mixer to medium speed and add the flour in thirds, alternating with adding the 1/2 cup milk and beating well between additions. Pour batter into 12 lined muffin tins, filling 2/3 full. Bake in the center of the oven at 350˚F for 20-23 minutes, or until a toothpick inserted into the center comes out clean. Let cool 5 minutes in the pan then remove cupcakes to a wire rack to cool completely.",
         cooking_duration: "30 minutes"
     },
@@ -146,7 +148,7 @@ const recipes = [
             "1 egg",
             "3 tbsp butter, melted"
         ],
-       
+        cuisine:"Indian",
         recipe: "Preheat your good quality, non-stick pan or griddle on medium heat first. Once it’s hot, lower the heat down to low-medium heat. Wait about two minutes. This part is crucial and so worth it. Lightly grease the pan with a small amount of butter (yes, even on non-stick pans), and wipe away any excess butter with a sheet of paper towel. Use a ¼ cup measuring cup to pour your batter so you get perfect, evenly sized pancakes. Start pouring from the middle, then continue pouring slowly in a circular motion so that the batter spreads into perfect round shapes. Allow the pancakes to cook properly! Don’t rush them on high heat, or flip them too early. Let that under-side cook to a beautiful golden brown colour, and when bubbles start forming on top and around the surface (batter side), they are ready to flip.",
         cooking_duration: "20 minutes"
     },
@@ -161,7 +163,7 @@ const recipes = [
             "1 egg",
             "1 tsp vanilla extract"
         ],
-      
+        cuisine:"Indian",
         recipe: "Beat sugar, butter, egg, and vanilla in one bowl; mix flour and leaveners in another. Gradually blend the flour mixture into the butter mixture. Roll the dough into balls and bake until the edges are golden.",
         cooking_duration: "25 minutes"
     },
@@ -180,7 +182,7 @@ const recipes = [
                 "1/4 cup grated Parmesan cheese",
                 "Salt and freshly ground black pepper to taste"
             ],
-            
+            cuisine:"Italian",
             recipe: "Cook pasta according to package instructions. Drain and set aside. While pasta cooks, heat a large skillet over medium heat. Add olive oil. Once hot, add minced garlic and sauté for 30 seconds, careful not to burn it. Add freshly diced tomatoes and cook, stirring, about 2 to 3 minutes. Add fresh ground black pepper to taste. Sprinkle with 2 tablespoons of Parmesan cheese. Add fresh chopped basil. Serve mixture over hot cooked spaghetti noodles. Garnish with remaining Parmesan cheese. Serve immediately.",
             cooking_duration: "25 minutes"
     },
@@ -195,7 +197,7 @@ const recipes = [
                 "1/3 cup grated Parmesan cheese",
                 "Salt and freshly ground black pepper to taste"
             ],
-            image:"r18.jpg",
+            cuisine:"Italian",
             recipe: "Preheat oven to 400°F (200°C). Place quartered tomatoes on a baking sheet, drizzle with 1 tablespoon of olive oil, and season with salt and pepper. Roast in the preheated oven for 20 minutes. While tomatoes are roasting, cook penne pasta according to package instructions. Drain and set aside. In a large skillet, heat the remaining 2 tablespoons of olive oil over medium heat. Add minced garlic and sauté for 30 seconds. Add roasted tomatoes to the skillet and cook for another 2 minutes. Toss in the cooked penne and mix well. Stir in torn basil leaves, and season with additional salt and pepper if needed. Serve with grated Parmesan cheese. Serve hot.",
             cooking_duration: "35 minutes"
      },
@@ -210,7 +212,7 @@ const recipes = [
                 "1/4 cup grated Parmesan cheese",
                 "Salt and freshly ground black pepper to taste"
             ],
-            image:"r18.jpg",
+            cuisine:"Italian",
             recipe: "Cook pasta according to package instructions. Drain and set aside. While pasta cooks, heat a large skillet over medium heat. Add olive oil. Once hot, add minced garlic and sauté for 30 seconds. Add halved cherry tomatoes and cook, stirring, for about 2 to 3 minutes. Add fresh ground black pepper to taste. Sprinkle with 2 tablespoons of Parmesan cheese. Add fresh chopped basil. Serve mixture over hot cooked fusilli noodles. Garnish with remaining Parmesan cheese. Serve immediately.",
             cooking_duration: "25 minutes"
     },
@@ -231,7 +233,7 @@ const recipes = [
                 "1 tsp thyme",
                 "1 tsp oregano"
             ],
-            image:"r18.jpg",
+            cuisine:"American",
             recipe: "Preheat oven to 450 degrees F (230 degrees C). In a large bowl, toss potato wedges with oil. Arrange in a single layer in a roasting pan. Bake in preheated oven for 50 minutes. Sprinkle with parsley, thyme, oregano, salt, and pepper. Bake for 10 minutes, or until golden brown.",
            cooking_duration: "60 minutes"
     },
@@ -245,7 +247,7 @@ const recipes = [
                 "1 tbsp mustard",
                 "Salt and pepper to taste"
             ],
-            image:"r18.jpg",
+            cuisine:"American",
           recipe: "Preheat your oven to 425 degrees F (220 degrees C). Bring a large pot of salted water to boil. While the water is heating, combine olive oil, minced garlic, rosemary, mustard, and some black pepper. Mix this in a bowl large enough to add your potatoes to. When the water is boiling, add the potatoes and boil for about 10 minutes or until they are easily pierced with a fork. Drain, and then toss with the mustard mixture. Line a baking sheet with parchment and spread the potatoes out evenly. Sprinkle with some kosher salt and bake for 12-15 minutes or until the skins are browning and sizzling. Scrape those delicious bits off the foil, sprinkle them over the potatoes, and then garnish with a few sprigs of rosemary.",
           cooking_duration: "45 minutes"
      },
@@ -258,7 +260,7 @@ const recipes = [
                 "2 tsp rosemary",
                 "Salt and pepper to taste"
             ],
-            image:"r18.jpg",
+            cuisine:"American",
           recipe: "Heat grill to medium and simmer the potatoes in salted water for 3 minutes. Drain well, tip into a shallow baking tray, then gently toss with the oil, garlic, rosemary, and seasoning. Spread out in one layer and grill for 10-15 minutes or until crisp and golden.",
           cooking_duration: "35 minutes"
     },
@@ -280,8 +282,10 @@ const recipes = [
             "1 pie crust",
             "4 egg whites"
           ],
-          image:"r18.jpg",
-          recipe: "In medium bowl, mix flour and salt. Cut in shortening, using pastry blender (or pulling 2 table knives through ingredients in opposite directions), until mixture forms coarse crumbs the size of small peas. Sprinkle with cold water, 1 tablespoon at a time, tossing with fork until flour mixture is moistened and can be pressed into a ball.Shape into flattened round on lightly floured surface. Wrap in plastic wrap; refrigerate about 45 minutes or until dough is cold.Heat oven to 450°F. With floured rolling pin, roll pastry on lightly floured surface into round 2 inches larger than upside-down 9-inch glass pie plate. Fold pastry into fourths; place in pie plate, or roll pastry loosely around rolling pin and transfer to pie plate. Unfold or unroll pastry and ease into plate, pressing firmly against bottom and side. Trim overhanging edge of pastry 1 inch from rim of pie plate. Fold and roll pastry under, even with plate; flute as desired. Prick bottom and side of pastry thoroughly with fork to prevent puffing. Bake 13 to 15 minutes or until light brown; cool on cooling rack.Reduce oven temperature to 350°F. In small bowl, beat egg yolks with fork. In 2-quart saucepan, mix 1 1/2 cups sugar and the cornstarch; gradually stir in 1 1/2 cups water. Cook over medium heat, stirring constantly, until mixture thickens and boils. Boil and stir 1 minute.Immediately stir with whisk at least half of hot mixture into egg yolks; stir back into hot mixture in saucepan. Return to boiling; boil and stir constantly 2 minutes; remove from heat. Stir in butter, lemon zest and lemon juice with whisk. Cover and keep warm.In medium bowl, beat egg whites and cream of tartar with electric mixer on high speed until foamy. Beat in sugar, 1 tablespoon at a time; scrape side of bowl occasionally. Continue beating until stiff, glossy peaks form and sugar is completely dissolved. Beat in vanilla. Pour hot lemon filling into baked pie shell. Immediately drop spoonfuls of meringue onto hot lemon filling, and carefully spread meringue to cover top completely, spreading to edge of crust to prevent shrinkage or weeping.Bake 20 to 25 minutes or until meringue is browned and temperature reaches 160°F. Cool on cooling rack 1 hour. Refrigerate about 4 hours or until filling is set. Store loosely covered in refrigerator."
+          cuisine:"American",
+         
+         recipe: "To make Lemon Meringue Pie, prepare a baked pie crust. For the filling, whisk sugar, cornstarch, salt, and water in a saucepan until smooth. Cook until thickened, then gradually whisk into beaten egg yolks and return to heat. Stir in lemon zest, juice, butter, and vanilla until smooth, then cool slightly. For the meringue, beat egg whites with cream of tartar until soft peaks form, gradually adding sugar until stiff peaks form. Pour filling into crust, spread meringue on top, and bake at 350°F until golden. Cool, refrigerate, and serve chilled for a delightful dessert.",
+         cooking_duration:"20 minutes"
         },
         {
           name: "Lemon Bars",
@@ -297,7 +301,7 @@ const recipes = [
             "1/4 cup water",
             "4 egg whites"
           ],
-          image:"r18.jpg",
+          cuisine:"American",
           recipe: " In a large bowl, combine the crust ingredients with an electric mixer until the mixture resembles coarse crumbs. Press the mixture down into an ungreased 13- x 9-inch baking pan. Bake at 350 degrees F until lightly golden brown around the edges. While the base layer is baking, whisk together the filling ingredients in a large bowl.Add filling and bake: Pour the lemon filling over the shortbread crust while it is still warm from the oven. Then, bake it until the topping appears to be set and is just beginning to lightly brown Allow the bars to cool completely at room temperature.Sprinkle the top of the cooled Lemon Bars with powdered sugar. This is done easily with a dusting wand.",
           cooking_duration: "50 minutes"
         },
@@ -314,10 +318,76 @@ const recipes = [
             "4 egg yolks",
             "4 egg whites"
           ],
-          image:"r18.jpg",
+          cuisine:"French",
           recipe: " To make the crust, combine flour, sugar, and salt in a food processor. Add cold butter cubes and pulse until mixture resembles coarse crumbs. Add egg yolk and ice water, pulsing until dough starts to come together. Shape into a disk, wrap in plastic wrap, and chill in the refrigerator.Preheat oven. Roll out dough on a floured surface to fit a tart pan. Press dough into the pan, trim excess, and prick bottom with a fork. Bake until golden brown. Cool completely.For the lemon custard filling, whisk sugar, cornstarch, and salt in a saucepan. Gradually whisk in water until smooth. Cook over medium heat until thickened. Whisk egg yolks and gradually add hot sugar mixture. Cook until thickened, remove from heat, and whisk in lemon zest, lemon juice, and butter. Pour into cooled tart crust and chill until set.Before serving, dust with powdered sugar and garnish with fresh berries if desired. Serve chilled.",
           cooking_duration: "40 minutes"
-        }
+        },
+        //Set 7:Pasta,Tomatoes,Zucchini,Ball pepper,Peas,Garlic,Olive oil,Salt,Black Pepper,Parmesan Cheese,Basil leaves
+        {
+          name: "Pasta Primavera",
+          ingredients: [
+              "200g pasta",
+              "1 cup cherry tomatoes, halved",
+              "1 zucchini, sliced",
+              "1 yellow bell pepper, sliced",
+              "1/2 cup frozen peas, thawed",
+              "3 cloves garlic, minced",
+              "1/4 cup extra virgin olive oil",
+              "Salt to taste",
+              "Freshly ground black pepper to taste",
+              "1/4 cup grated Parmesan cheese",
+              "1/4 cup fresh basil leaves, chopped"
+          ],
+          recipe: "Cook pasta in salted boiling water until al dente. Drain and set aside. In a large pan, heat olive oil over medium heat. Add garlic and sauté until fragrant. Add cherry tomatoes, zucchini, and bell pepper. Cook until vegetables are tender. Stir in peas and cooked pasta. Season with salt and black pepper. Toss to combine. Garnish with Parmesan cheese and fresh basil. Serve hot.",
+          cooking_duration: "30 minutes",
+          cuisine: "Italian"
+      },
+      {
+       name: "Vegetable Fajitas",
+       ingredients: [
+            "200g pasta",
+            "1 cup cherry tomatoes, halved",
+            "1 zucchini, sliced",
+            "1 yellow bell pepper, sliced",
+            "1/2 cup frozen peas, thawed",
+            "3 cloves garlic, minced",
+            "1/4 cup extra virgin olive oil",
+            "Salt to taste",
+            "Freshly ground black pepper to taste",
+            "1/4 cup grated Parmesan cheese",
+            "1/4 cup fresh basil leaves, chopped",
+            "8 small flour tortillas"
+        ],
+       recipe: "Heat olive oil in a large pan over medium heat. Add garlic and sauté until fragrant. Add zucchini, bell pepper, and cherry tomatoes. Cook until vegetables are tender. Stir in peas and season with salt and black pepper. Warm the flour tortillas in a separate pan. Spoon the vegetable mixture onto the tortillas. Sprinkle with Parmesan cheese and fresh basil. Serve hot.",
+       cooking_duration: "30 minutes",
+       cuisine: "Mexican"
+      },
+      {
+        name: "Spanish Vegetable Paella",
+        ingredients: [
+            "200g pasta (substitute for traditional paella rice)",
+            "1 cup cherry tomatoes, halved",
+            "1 zucchini, diced",
+            "1 yellow bell pepper, diced",
+            "1/2 cup frozen peas, thawed",
+            "3 cloves garlic, minced",
+            "1/4 cup extra virgin olive oil",
+            "Salt to taste",
+            "Freshly ground black pepper to taste",
+            "1/4 cup grated Parmesan cheese",
+            "1/4 cup fresh basil leaves, chopped",
+            "4 cups vegetable broth",
+            "1/2 tsp smoked paprika",
+            "1 pinch saffron threads"
+        ],
+        
+        recipe:"If using saffron, soak the saffron threads in a small amount of warm vegetable broth for about 10 minutes.Heat olive oil in a large paella pan or wide skillet over medium heat.Add minced garlic and sauté until fragrant, about 1 minute.Add diced zucchini and yellow bell pepper. Cook for about 5 minutes until they start to soften.Add halved cherry tomatoes and cook for another 2 minutes.Stir in the rice and cook for 2-3 minutes, ensuring it is well-coated with the oil and vegetables.Add smoked paprika and stir well.Pour in the vegetable broth (including the saffron broth, if using). Stir to combine.Bring to a boil, then reduce heat to medium-low and simmer uncovered.Cook for about 20 minutes, stirring occasionally, until the rice is tender and most of the liquid is absorbed. If needed, add more broth or water to keep the rice cooking.Stir in the thawed peas during the last 5 minutes of cooking.Season with salt and freshly ground black pepper to taste.Garnish with chopped fresh basil. Optional: Sprinkle with grated Parmesan cheese for a twist.Let the paella sit for a few minutes before serving to allow the flavors to meld.",
+        cooking_duration: "45 minutes",
+        cuisine: "Spanish"
+      }
+    
+    
+      
       
     
 ];

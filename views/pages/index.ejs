@@ -1,10 +1,19 @@
 <% layout("./layouts/boilerplate.ejs")%>
 <body>
   <div class="row">
-    <h2>Select the ingredients</h2>
+      <label for="filter">Sort by:</label>
+
+      <select name="filter" id="filter">
+              <option value="ingredients" selected>Ingredients</option>
+              <option value="cooking_duration">Cooking Duration</option>
+              <option value="cuisine">Cuisine</option>
+ 
+      </select>
+
+    <h2 id="sort-header">Select the ingredients</h2>
     <div class="col">
     <% for(let i=0;i< ingredients.length;i++) {%>
-          <a href="recipe_no/<%=i%>">
+        <a href="recipe_no/<%=i%>">
            <div class="card ">
             <div class="card-body">
                <% for(let j=0; j<ingredients[i].length;j++){%>
@@ -14,14 +23,12 @@
                <% } %>
             
             </div>
-         
-            
-            </div>
-          </a>
+          </div>
+        </a>
         
-       
+    <%}%>
       
-     <%}%>
+     
   </div>
   </div>
  
