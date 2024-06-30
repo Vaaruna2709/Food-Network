@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 let savedRecipes=[];
 const recipes = require("./init/data.js");
 const ingredients = require('./init/ingredients.js');
-console.log(ingredients.length)
+
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -38,11 +38,25 @@ app.get("/recipe_no/:index",async(req,res)=>{
     res.render("pages/recipe",{index,recipes,noOfCards});
    
 });
+app.get("/cuisine",(req,res)=>{
+   
+    
+    const cuisine = req.query.cuisine;
+    if (cuisine) {
+        const filteredRecipes = recipes.filter(recipe => cuisine === recipe.cuisine);
+        const noOfCards = filteredRecipes.length;
+        let index =0;
+        res.render("pages/recipe",{recipes:filteredRecipes,index,noOfCards});
+    }else{
+        res.render("pages/cuisine")
+    }
+    
+})
 app.get("/cooking-duration",(req,res)=>{
    
     let {max} = req.query;
-    console.log(max);
-      // Convert max to a number
+    // console.log(max);
+  
     max = parseInt(max);
 
     if(max){
@@ -55,17 +69,29 @@ app.get("/cooking-duration",(req,res)=>{
         console.log(noOfCards);
         res.render("pages/recipe",{recipes:filteredRecipes,index,noOfCards});
     }
+
+        res.render("pages/duration");
+  
      
   
-    res.render("pages/duration");
+  
     
 })
 
 app.get("/saved-recipes", (req, res) => {
     try {
-       
+     
         savedRecipes = JSON.parse(req.query.savedRecipes);
-        res.render('pages/saved', { savedRecipes ,recipes});
+     
+        console.log(savedRecipes);
+        const filteredRecipes = recipes.filter(recipe => savedRecipes.includes(recipe.id));
+        console.log(filteredRecipes);
+        
+        const noOfCards = filteredRecipes.length;
+        let index =0;
+       res.render("pages/recipe",{recipes:filteredRecipes,index,noOfCards});
+       
+       
 
     } catch (e) {
         console.error("Error parsing savedRecipes:", e);

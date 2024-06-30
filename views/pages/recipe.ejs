@@ -7,11 +7,12 @@
                 <div class="card recipe-card" data-index="<%i%>">
                     <div class="card-head">
                         <div class="heading"><h3><%= recipes[i].name %></h3></div>
-                        <div class="save-options"><span class="heart" data-index="<%= i %>">&#9829;</span></div>
+                        <div class="save-options"><span class="heart" data-id="<%= recipes[i].id %>">&#9829;</span></div>
                     </div>
                     <div class="card-body">
                         <p>Ingredients: <%= recipes[i].ingredients %></p>
-                        <img src="/images/r<%= i + 1 %>.jpg" class="card-img" alt="image">
+                       
+                        <img src="/images/<%=recipes[i].name%>.jpg" class="card-img" alt="image">
                         <p>Recipe: <%= recipes[i].recipe %></p>
                         <p>Cuisine:<%=recipes[i].cuisine%></p>
                         <p>Cooking-duration: <%= recipes[i].cooking_duration %></p>

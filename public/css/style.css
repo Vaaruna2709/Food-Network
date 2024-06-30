@@ -43,17 +43,19 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
     align-items: center;
 }
 
 .card{
     padding: 0.5rem;
     width:15rem;
-    margin: 0.5rem;
+    margin: 1rem;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: linear 0.3s ease;
+  
 }
 .card:hover {
  opacity: 0.8;
@@ -66,7 +68,7 @@ a{
     padding: 0.5rem;
 }
 .card-img{
-    height: 12rem;
+    height: 14rem;
     
     width: 100%;
 }
@@ -102,6 +104,9 @@ a{
 .heart.saved{
     color: red;
 }
-.timeCard{
-    height: fit-content!important;
+.pocketCards{
+    height: 7rem !important;
+}
+.pocketCards .card-body{
+    height: 6rem !important;
 }

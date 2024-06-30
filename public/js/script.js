@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
  
     let savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
    console.log(savedRecipes);
-    // Function to update UI based on savedRecipes
+   
     const updateUI = () => {
         hearts.forEach(heart => {
-            const index = Number(heart.dataset.index);
-            if (savedRecipes.includes(index)) {
+            const id = Number(heart.dataset.id);
+            if (savedRecipes.includes(id)) {
                 heart.classList.add('saved');
             } else {
                 heart.classList.remove('saved');
@@ -16,18 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initial UI update
     updateUI();
 
-    // Event listener for heart clicks
+    
     hearts.forEach(heart => {
         heart.addEventListener("click", () => {
-            const index = Number(heart.dataset.index);
-            if (savedRecipes.includes(index)) {
-                savedRecipes = savedRecipes.filter(recipeIndex => recipeIndex !== index);
+            const id = Number(heart.dataset.id);
+            if (savedRecipes.includes(id)) {
+                savedRecipes = savedRecipes.filter(recipeId => recipeId !== id);
                 heart.classList.remove("saved");
             } else {
-                savedRecipes.push(index);
+                savedRecipes.push(id);
                 heart.classList.add("saved");
             }
             localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes));
@@ -46,12 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const url = `/saved-recipes?${queryParams}`;
         axios.get(url)
-         .then(response => console.log("Received data:", response.data))
+         .then(response => console.log("Received data"))
          .catch(error => console.error("Error fetching saved recipes:", error));
        
          window.location.href = url;
     });
           let dropdown =document.getElementById('filter');
+        if(dropdown){
+
           dropdown.addEventListener('change', function() {
             let selectedValue = this.value;
             let sortHeader = document.getElementById('sort-header');
@@ -79,5 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         
   
-    });
+          });
+        }
 });
